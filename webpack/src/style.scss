@@ -1,0 +1,11 @@
+$primary: #8cffbc;
+$danger: #ff3a3a;
+
+@import "~bootstrap/scss/bootstrap";
+
+$body-background-color: #b7c8ff;
+
+
+body {
+  background: $body-background-color,
+};
