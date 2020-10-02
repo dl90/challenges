@@ -2,23 +2,17 @@
 
 site objectives:
 
-- traffic/visitors
+* traffic/visitors
+  * revenue: ads (publishers, news, social media)
+  * source: paid (traffic adds) organic (*direct*: url, *referral*: link, *search listing*: google)
 
-  - revenue: ads (publishers, news, social media)
+* conversions: get users to do something (call for action)
+  * micro: newsletter, commenting, sharing
+  * macro: membership, premium account
 
-  - source: paid (traffic adds) organic (*direct*: url, *referral*: link, *search listing*: google)
-
-- conversions: get users to do something (call for action)
-
-  - micro: newsletter, commenting, sharing
-
-  - macro: membership, premium account
-
-- revenue:
-
-  - up-sell/cross-sell
-
-  - customer loyalty (retention less expensive than acquisition)
+* revenue:
+  * up-sell/cross-sell
+  * customer loyalty (retention less expensive than acquisition)
 
 ## Landing page
 
@@ -41,6 +35,16 @@ Netflix landing page: one call to action, join for a free month (new members)
 home page: general purpose, promote exploration, full of links
 
 landing page: single purpose, single call to action/link
+
+### Considerations
+
+* same message between add campaign and landing page
+* minimize user input, simplify form
+* simple, navigable
+* mobile friendly, load time
+* call to action/value proposition above the fold, everything else below
+* thankyou page/message following user conversion
+* SEO
 
 ## Microsite
 

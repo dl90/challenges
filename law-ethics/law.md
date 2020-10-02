@@ -4,6 +4,8 @@ The body of rules from the government and enforced by the courts or other govern
 
 Law and morality are not synonymous, not all laws reflect the sentiment/moral values of the populous
 
+---
+
 > Substantive Law:
 >
 > 'the rights and rules that govern behavior and set limits on conduct'
@@ -12,6 +14,7 @@ Law and morality are not synonymous, not all laws reflect the sentiment/moral va
 >
 > eg: right to skip a course
 
+---
 
 > Procedural Law:
 >
@@ -21,6 +24,7 @@ Law and morality are not synonymous, not all laws reflect the sentiment/moral va
 >
 > process to exempt a course
 
+---
 
 > Public Law:
 >
@@ -28,6 +32,7 @@ Law and morality are not synonymous, not all laws reflect the sentiment/moral va
 >
 > constitutional, tax, criminal, administrative laws (applied and enforced by the government to its citizens)
 
+---
 
 > Private law:
 >

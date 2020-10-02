@@ -12,6 +12,7 @@
 | stare decisis | precedent, referring to previous cases |
 | statutes | laws created on the federal, provincial and municipal (bi-laws) level |
 | intra vires | (federal, provincial, municipal) sharing same jurisdiction |
+| prima facie | accepted as true until proven otherwise |
 
 * Statutes have precedence over common law and equity
 

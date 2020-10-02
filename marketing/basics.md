@@ -3,11 +3,8 @@
 ## Marketing concepts
 
 * Product: good product brings customers
-
 * Selling: promote product to gain consumers
-
 * Marketing: identify consumer needs and adapt to satisfy
-
 * Societal: balance between consumer needs, profits and social responsibilities
 
 Value = (functional benefits + emotional benefits) / (monetary cost + time cost + energy cost + psychic costs)
@@ -15,61 +12,46 @@ Value = (functional benefits + emotional benefits) / (monetary cost + time cost 
 ## 4 P's (after target market is identified)
 
 * Product: what customers sees (quality, features, design...)
-
 * Price
-
 * Place: distribution
-
 * Promotion: advertisement channels
 
 ## External factors to consider
 
 * demographic environment: statistical trends and features of a country/region
-
 * economic environment: strength/longevity/growth at a region/country
-
 * political/legal environment
-
 * social/cultural environment
-
 * etc
 
 ---
 
-## Consumer adoption process
+## Value Proposition
 
-* awareness: consumer becomes aware of a need or product that fulfills their need
+to persuade visitors why choose you over others
 
-* interest: info gathering stage
+* clearly state benefits, how its delivered (specific)
+* relevant, solves issues others can't (pain-focused)
+* differentiation to competitors (exclusive)
 
-  * selective exposure: specifics regarding trustworthy source of information (TV, online, friend)
+### Parts
 
-  * selective perception: info screening (willing or not to listen/believe)
+1. Headline: benefit offered, 1 sentence, attention grabber
+1. Sub-headline: 3 sentence paragraph or 3 points to explain benefits/features
+1. Visual
 
-  * selective retention: only remembers what interests them
+### Generate
 
-* alternatives: considers all options
+1. Identify all the benefits
+1. What makes these benefits valuable
+1. Identify customer's issue
+1. Connect benefit with customer's issue
+1. Differentiate based on value provided
 
-  * evoked set: a narrowed down selection of competing products
+## Call To Action
 
-  * salient attributes: attributes considered important by the consumer from the set
+prompts user to take action (verb/command)
 
-  * determinate attributes: attributes considered most important to the purchase
-
-  * irrelevant attributes: features consumer considers useless
-
-* trial
-
-* purchase decision: considerations just prior to purchase event
-
-  * brand attitude: like the brand?
-
-  * social factors: social persuasion
-
-  * anticipated situational factors: factors the consumer expects, leading to the purchase
-
-  * non-predictable situational factors (against): unable to purchase due to some event
-
-  * perceived risk (against): uncertainty towards product
-
-* confirmation: post purchase (cognitive dissonance, guilt/doubt)
+* contrast, attention grabber, font size
+* actionable text (learn more, sign-up now ), short
+* urgency*
