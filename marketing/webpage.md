@@ -51,3 +51,9 @@ landing page: single purpose, single call to action/link
 site outside of main site's domain, targeting sub-segment of primary market
 
 campaign specific and temporary (buzzworthy/creative)
+
+## Conversion Rate Optimization
+
+* a/b testing, split testing, comparing the effectiveness of the two
+* multivalent testing
+* sample size 10%

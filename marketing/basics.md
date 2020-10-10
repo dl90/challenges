@@ -11,9 +11,11 @@ Value = (functional benefits + emotional benefits) / (monetary cost + time cost 
 
 ## 4 P's (after target market is identified)
 
-* Product: what customers sees (quality, features, design...)
+Marketing objective
+
+* Product: what customers sees (quality, features, design...), new product/service
 * Price
-* Place: distribution
+* Place: distribution channels
 * Promotion: advertisement channels
 
 ## External factors to consider

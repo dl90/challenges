@@ -6,6 +6,7 @@
 * needs and expectations
 * realistic
 * user research: who are your users, why are they using, what are their behaviors, assumptions, expectations of what they are using
+* visual mood board
 
 ## Journey map
 

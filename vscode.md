@@ -27,38 +27,41 @@ $HOME/Library/Application Support/Code/User/settings.json
         "**/.factorypath": true
     },
     "editor.tabSize": 2,
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "python.jediEnabled": false,
-    "[sql]": {
-        // "editor.defaultFormatter": "mtxr.sqltools"
-    },
     "cSpell.userWords": [
+        "Anticybersquatting",
         "Bcrypt",
         "Chebyshev",
         "Datagram",
+        "Extranet",
         "Interruptible",
+        "Leetcode",
+        "Microsite",
         "OWASP",
         "Regen",
         "Subnetting",
         "TINYINT",
         "Tileset",
         "autofit",
+        "buzzworthy",
         "connectionless",
         "crossorigin",
+        "cybersquatting",
         "devtool",
         "dotenv",
         "fileprogress",
         "firestore",
         "getenv",
         "ifconfig",
+        "judicate",
         "minmax",
         "monospace",
         "netmask",
         "netstat",
         "nmap",
+        "noopener",
+        "noreferrer",
         "nosniff",
+        "nums",
         "pathfinding",
         "performant",
         "prepending",
@@ -66,7 +69,9 @@ $HOME/Library/Application Support/Code/User/settings.json
         "resave",
         "spritesheet",
         "sqlite",
+        "subarrays",
         "systemctl",
+        "transformative",
         "tweek",
         "unirest",
         "wtforms"
@@ -77,7 +82,6 @@ $HOME/Library/Application Support/Code/User/settings.json
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
-    "[python]": {},
     "workbench.colorCustomizations": {
         "editor.background": "#000000",
         "activityBar.background": "#000000",
@@ -92,23 +96,25 @@ $HOME/Library/Application Support/Code/User/settings.json
     },
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 150,
-    "[typescript]": {
-        // "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     // "javascript.format.enable": false,
     // "javascript.validate.enable": false,
     "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
     "javascript.format.insertSpaceBeforeAndAfterBinaryOperators": true,
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
+    "trailing-spaces.trimOnSave": true,
+    "javascript.format.insertSpaceAfterConstructor": true,
+    "python.languageServer": "Microsoft",
+    // "javascript.format.enable": false,
     // "eslint.format.enable": true,
-    // "standard.enable": true,
-    // "standard.validate": [
-    //     "javascript",
-    //     "javascriptreact",
-    //     "typescript",
-    //     "typescriptreact"
-    // ]
-    // "markdown-preview-enhanced.previewTheme": "vue.css"
-    // "java.semanticHighlighting.enabled": false,
+    // "standard.enable": false,
+    "standard.validate": [
+        "javascript",
+        "javascriptreact",
+        "typescript",
+        "typescriptreact"
+    ],
+    "[vue]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
 }
 ```
