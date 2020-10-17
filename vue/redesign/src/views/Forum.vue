@@ -1,23 +1,3 @@
-/*
-  <div class="login-container">
-    <form class="login-form">
-      <input
-        class="username-field"
-        type="text"
-        placeholder="Username"
-        required
-      />
-      <input
-        class="password-field"
-        type="password"
-        placeholder="Password"
-        required
-      />
-      <input class="login-button" type="button" value="Login" />
-    </form>
-  </div>
-*/
-
 <template>
   <section class="content">
     <div class="main-column">
@@ -45,6 +25,7 @@
         </div>
         <!-- end of form-content-header -->
 
+        <button id="showModel">Open Modal</button>
         <div class="form-post-container">
           <div class="form-post">
             <a class="post-topic">New to MMORPG</a>

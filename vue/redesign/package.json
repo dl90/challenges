@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "dotenv": "^8.2.0",
+    "firebase": "^7.24.0",
     "vue": "^2.6.11",
     "vue-router": "^3.4.5"
   },

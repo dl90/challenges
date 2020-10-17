@@ -15,3 +15,29 @@
   * demonic, alert system
   * parasitic, both sovereign and transient
 * user heuristics
+
+## Elements of design
+
+* lines
+* colors
+* shapes
+* space
+* texture
+* typography
+* scale
+* emphasis
+* balance
+* harmony
+
+* contrast
+* dominance
+* repetition
+* accessibility
+* alignment
+* movement
+* proportion
+* pattern
+* unity
+
+* asymmetrical design
+* hierarchy, directed focus

@@ -1,116 +1,72 @@
-# Jurisdiction
+# Jurisdiction and Venue in Cyberspace
 
-| Term | Definition |
-| :----- | :------- |
-| Civil Code System | rule based (civil code) |
-| Common Law System | precedent based (from higher court) laws not created by Parliament |
-| Doctrine of Paramountcy | conflicting federal and provincial laws in the same jurisdiction, federal law takes precedence |
-| equity | concept of fairness |
-| Higher Standard Doctrine | follow strictest guideline |
-| Notwithstanding Clause | allows government to override portions of the Charter (pass laws) for a limited time |
-| Parliamentary Supremacy | Parliament is the ultimate creator of laws |
-| stare decisis | precedent, referring to previous cases |
-| statutes | laws created on the federal, provincial and municipal (bi-laws) level |
-| intra vires | (federal, provincial, municipal) sharing same jurisdiction |
-| prima facie | accepted as true until proven otherwise |
+> Cyberlaw
+>
+> internet laws + jurisdictional question, IP law, contract law, tort law, applicable federal/state statues
 
-* Statutes have precedence over common law and equity
+## Jurisdiction
 
-## Federal Jurisdiction
+which court has the power to decide, where the lawsuit is handled
 
-* national defense
-* crime
-* immigration
-* IP
-* railway
-* everything else not listed in the Constitution (s.91 'peace, order and good government' POGG)
+* subject matter: bankruptcy (Federal level)
+* in rem: property locale region has jurisdiction over property
+* personal: defendants residence determines jurisdiction
 
----
+## Minimum contacts
 
-## Civil Law System
+determines if a lawsuit can be issued in particular regions
 
-A judge must rely on the Civil Code, then refer to previous decisions when rendering a decision
+* defendant had conducted business or was incorporated in the region you want to sue from
+* person visited state frequently
 
-## Common Law System
+defendants not residing in or business not established in the region will not meet 'minimum contacts' requirement.
 
-> origins: peoples customs/traditions, Roman law (property rights), Church (family and estate), merchants (guilds/unions)
+```text
+California lawsuit by Californian based plaintiff against Wisconsin based defendant
+Court must check if defendant has sufficient 'minimum contacts' in California for Californian courts to have jurisdiction
 
-Judgement from the common law system is bound by precedent with the following:
+Passive websites do not create sufficient 'minimum contacts'
+Active websites with user interactions is seen as having sufficient 'minimum contacts' to exercise personal jurisdiction
+```
 
-* case must be in the same jurisdiction
-* precedent must be a decision from a higher court
-* must be based on substantially similar facts
+## Service of Process
 
-## Judicature Acts (1873 - 1875)
+* informing defendant of lawsuit with formal delivery of
+  * writ: written order issued by court
+  * summons: notice of appearance in court
+  * any other legal process
 
-Court of Chancery (Common law) merged with Court of Equity
+Service of Process must follow rules, Federal Rules of Civil Procedure (US), or is invalid
 
-The two bodies of laws are separate (you can plead both Common Law and Equity at the same court)
+* personal service: stamped document personally served to the defendant
+* certified mail: verifies mail was delivered
+* publication in newspaper: if defendant is not found (rare)
+* electronic service is possible if defendant expressed concent (written)
 
-Common law uses Common law precedents | Equity law uses Equity law precedents
+## Choice of Law Provision
 
----
+* choice of law: which jurisdiction's law should apply
+* choice of law provision: contractual designated locale jurisdiction of law for future disputes
 
-## [The Canadian Charter of Rights and Freedoms](https://www.justice.gc.ca/eng/csj-sjc/rfc-dlc/ccrf-ccdl/)
+```text
+Canadian party and American party doing business can sign a provision which will handle any future disputes with French law
 
-Protects the rights of the populous against the government and its agencies, with caveats
+website TOS typically state jurisdiction of law for disputes between site owners and users
+```
 
-Section 1 of the Charter allow the government to restrict these rights when reasonable
+## Forum Selection Clause
 
-Section 33 of the Charter allows the government to pass laws (contrary to the Charter), but needs to be re-enacted every five years (to keep the law)
+* venue: where trial court has jurisdiction, not which jurisdiction's law is applied
+* forum selection clause: contractual designated place for handling litigation
 
-Rights infringed by an entity (non government) is not covered by the Charter, but by the Human Rights Act of the province of residence or the Canadian Human Rights Act (federally regulated jurisdiction)
+> Note: don't choose courts that do not handle cases based on different laws if applicable
 
-Employers can not discriminate in hiring/promotion/dismissal (duty to accommodate) unless undue hardship
+```text
+Choice of Law provision: BC provincial and Canadian Federal law will be used to judge
 
-> undue hardship: avoid unreasonable or disproportionate burden or obstacle
+Forum selection clause: Ontario provincial court has jurisdiction for litigation using BC/Canadian federal law
+```
 
-### Fundamental Freedoms
+## Full Faith and Credit Clause (US)
 
-* limitations: infringe others rights, hate speech, violence, undermine public programs/policies
-* religion, express religious believes (private/public)
-* thought and expression, participate in peaceful demonstrations/protest
-* freedom of the press/media (but not slander)
-
-### Democratic Rights
-
-* every citizen (of the voting age) have the right to vote and run for candidacy
-* elected officials are not permanent
-
-### Mobility Rights
-
-* free to enter, remain and leave Canada
-* free to live and seek work anywhere within Canada
-* regional labour programs/benefits do not transfer
-
-### Legal Rights
-
-* s.7 right to life, liberty, and security of person
-* searches and seizures require clear legal reasons
-* individuals treated fairly at every stage of the justice system
-* protection against unreasonable laws
-* protection against arrest without good reason
-* arrested rights
-  * be told quickly of the offence you are charged with
-  * be tried within a reasonable amount of time
-  * choose not to testify at your own trial
-  * be presumed innocent until proven guilty beyond a reasonable doubt in a fair and public hearing by an independent and unbiased tribunal
-  * only be denied reasonable bail with cause
-  * be tried by a jury for serious charges
-  * be convicted only for an act or omission that was a crime at the time it was committed
-  * only be tried or punished once for an offence
-  * receive the lesser punishment if the punishment for the crime changes between the time it was committed and the time of sentencing
-* protection against cruel and unusual punishment
-
-### Equality Rights
-
-* can not discriminate against: race, national or ethnic origin, colour, religion, sex, age, or mental or physical disability, sexual orientation, residency, marital status or citizenship
-
-### Official Language Rights
-
-* English and French have equal status
-* all federal activities must have both languages available
-
-### Minority Language Rights
-
-> Language rights and minority-language education rights can not be overridden by s.33 (notwithstanding clause)
+decisions rendered by courts with appropriate jurisdiction will be respected regardless of locale

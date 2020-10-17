@@ -4,7 +4,7 @@
       <div class="center-column">
         <div class="developer-message-container">
           <h2 class="message-title sub-title">
-            Message From The Game Developers
+            Message From The Developers
           </h2>
           <p class="message">Were slowly getting there! 🏁</p>
           <p class="message">

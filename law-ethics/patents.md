@@ -51,9 +51,12 @@ confidential business info that offers an advantage, kept in secrecy
 
 examples: processes, formulas, software algorithm, clientele
 
+> Canada does not have statues equivalent to the Trade Secret Act, instead trade secret laws are based on common law principles enforced through common law torts (handled through Provincial Superior Courts).
+
 ### Uniform Trade Secrets Act (UTSA)
 
-model statue that codifies basic principles of common-law trade secret protection
+* model statue used in America that codifies basic principles of common-law trade secret protection
+* trade secret disputes are handled federally for products/services that crosses state/international boarders
 
 ### Protecting Trade Secrets
 

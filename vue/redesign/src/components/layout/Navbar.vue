@@ -1,7 +1,7 @@
 <template>
   <header class="header-container">
     <div class="header-nav-container">
-      <button class="nav-button" id="home" v-on:click="redirect">Home</button>
+      <button class="nav-button" id="/" v-on:click="redirect">Home</button>
       <button class="nav-button" id="news" v-on:click="redirect">News</button>
       <button class="nav-button" id="game" v-on:click="redirect">Game</button>
       <button class="nav-button" id="forum" v-on:click="redirect">Forum</button>
