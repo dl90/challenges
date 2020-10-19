@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Home from '../views/Home'
+import { auth } from '../firebase'
 
 Vue.use(VueRouter)
 
@@ -8,7 +10,7 @@ const routes = [
     path: '/',
     name: 'Home',
     webpackChunkName: 'home',
-    component: () => import('../views/Home.vue')
+    component: Home
   },
   {
     path: '/news',
@@ -26,7 +28,10 @@ const routes = [
     path: '/forum',
     name: 'Forum',
     webpackChunkName: 'forum',
-    component: () => import('../views/Forum.vue')
+    component: () => import('../views/Forum.vue'),
+    meta: {
+      requiresAuth: true
+    }
   },
   {
     path: '/about',
@@ -39,21 +44,20 @@ const routes = [
     path: '/login',
     name: 'Login',
     webpackChunkName: 'login',
-    component: () => import('../components/Login.vue')
-  },
-  {
-    path: '/register',
-    name: 'Register',
-    webpackChunkName: 'register',
-    component: () => import('../components/Register.vue')
-  },
-  {
-    path: '/dashboard',
-    name: 'Dashboard',
-    webpackChunkName: 'dashboard',
-    component: () => import('../components/Dashboard.vue')
+    component: () => import('../components/AuthForm.vue')
   }
 ]
 
-const router = new VueRouter({ mode: 'history', routes })
+const router = new VueRouter({
+  mode: 'history',
+  // base: 'localhost',
+  routes
+})
+
+router.beforeEach((to, from, next) => {
+  const requiresAuth = to.matched.some(x => x.meta.requiresAuth)
+  if (requiresAuth && !auth.currentUser) next('/login')
+  else next()
+})
+
 export default router

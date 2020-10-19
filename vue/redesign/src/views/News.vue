@@ -1,16 +1,14 @@
 <template>
   <main class="page">
     <section class="content">
-      <div class="left-column"></div>
-
       <div class="center-column">
         <div class="update-contaniner">
-          <h2 class="message-title sub-title">Weekly Update</h2>
+          <h2 class="sub-title txt">Weekly Update</h2>
           <img class="update-image" src="../assets/images/news-update.jpg" />
           <div class="change-log-divider"></div>
-          <h3 class="change-log-title sub-title">Change Log</h3>
+          <h3 class="sub-title txt">Change Log</h3>
           <section class="change-log-text-container">
-            <p class="change-log-message">
+            <p class="change-log-message txt">
               'Filler Text: Daily Stacking' building up a stack of twenty five
               daily quests to hand in for XP once the Expansion arrives. Of
               course, the irony is that while I’ll be sporting the Witch Hunter
@@ -21,13 +19,13 @@
               is going to mention that, perhaps, in order to make money in the
               gaming sector, you might want to try making a good game, right?
             </p>
-            <li class="change-log-message">
+            <li class="change-log-message txt">
               😘 SWTOR now has new raids: Eternity Vault, Karagga's Palace, and
               Explosive Conflict
             </li>
-            <li class="change-log-message">😛 List item 2</li>
-            <li class="change-log-message">🥳 List item 3</li>
-            <p class="change-log-message">
+            <li class="change-log-message txt">😛 List item 2</li>
+            <li class="change-log-message txt">🥳 List item 3</li>
+            <p class="change-log-message txt">
               Filler Text: SWTOR now has three raids: Eternity Vault, Karagga's
               Palace, and Explosive Conflict. I first discovered Lordaeron as a
               fledgling warrior, prone to wearing mail and even leather because
@@ -39,7 +37,7 @@
               experiences that make him so frustrated that our time spent
               playing slowly becomes more of a burden than pleasure.
             </p>
-            <p class="change-log-message">
+            <p class="change-log-message txt">
               Filler Text: My warlock is the first of the family to start the
               process of 'Daily Stacking' building up a stack of twenty five
               daily quests to hand in for XP once the Expansion arrives. Of
@@ -51,7 +49,7 @@
               is going to mention that, perhaps, in order to make money in the
               gaming sector, you might want to try making a good game, right?
             </p>
-            <p class="change-log-message">
+            <p class="change-log-message txt">
               Filler Text: SWTOR now has three raids: Eternity Vault, Karagga's
               Palace, and Explosive Conflict. I first discovered Lordaeron as a
               fledgling warrior, prone to wearing mail and even leather because
@@ -66,44 +64,64 @@
           </section>
         </div>
         <div class="secondary-section-container">
-          <div class="left-column-container">
-            <h3 class="feature-vote-title">Which feature should we add?</h3>
-            <form class="vote-selection-container">
-              <input
-                class="vote-selector"
-                type="radio"
-                name="gender"
-                value="feature-1"
-                checked
+          <div class="left-column-card">
+            <div class="card-content">
+              <h3 class="sub-title txt">
+                Which feature next?
+              </h3>
+              <form class="vote-selection-container">
+                <div>
+                  <input
+                    class="vote-selector txt"
+                    id="feature-1"
+                    type="radio"
+                    name="gender"
+                    value="feature-1"
+                    checked
+                  />
+                  <label for="feature-1" class="label txt">Feature 1 😀</label>
+                </div>
+
+                <div>
+                  <input
+                    class="vote-selector txt"
+                    id="feature-2"
+                    type="radio"
+                    name="gender"
+                    value="feature-2"
+                  />
+                  <label for="feature-2" class="label txt">Feature 2 🥳</label>
+                </div>
+
+                <div>
+                  <input
+                    class="vote-selector txt"
+                    id="feature-3"
+                    type="radio"
+                    name="gender"
+                    value="feature-3"
+                  />
+                  <label for="feature-2" class="label txt">Feature 3 😋</label>
+                </div>
+                <input
+                  class="vote-button"
+                  type="button"
+                  value="Vote 👍"
+                /><br />
+              </form>
+              <div class="volt-result-divider"></div>
+              <h4 class="vote-result-title txt">Vote Result</h4>
+              <img
+                class="vote-result-graph"
+                src="../assets/images/vote-result.png"
               />
-              Feature 1 😀<br />
-              <input
-                class="vote-selector"
-                type="radio"
-                name="gender"
-                value="feature-2"
-              />
-              Feature 2 🥳<br />
-              <input
-                class="vote-selector"
-                type="radio"
-                name="gender"
-                value="feature-3"
-              />
-              Feature 3 😋<br />
-              <input class="vote-button" type="button" value="Vote 👍" /><br />
-            </form>
-            <div class="volt-result-divider"></div>
-            <h4 class="vote-result-title">Vote Result</h4>
-            <img
-              class="vote-result-graph"
-              src="../assets/images/vote-result.png"
-            />
+            </div>
           </div>
+
           <div class="right-column-container">
             <div class="feature-text-container">
-              <h3 class="featuer-title">Feature 1: Game does not crash</h3>
-              <p class="feature-text">
+              <h3 class="featuer-title txt">Feature 1: Game does not crash</h3>
+              <p class="feature-text txt">
                 SWTOR now has three raids: Eternity Vault, Karagga's Palace, and
                 Explosive Conflict. I first discovered Lordaeron as a fledgling
                 warrior, prone to wearing mail and even leather because I knew
@@ -116,15 +134,15 @@
                 becomes more of a burden than pleasure.
               </p>
               <ol class="feature-list">
-                <li class="feature-list-item">Thing one 👍</li>
-                <li class="feature-list-item">Thing two</li>
-                <li class="feature-list-item">Thing three</li>
-                <li class="feature-list-item">Thing four ✌️</li>
+                <li class="feature-list-item txt">Thing one 👍</li>
+                <li class="feature-list-item txt">Thing two</li>
+                <li class="feature-list-item txt">Thing three</li>
+                <li class="feature-list-item txt">Thing four ✌️</li>
               </ol>
-              <h3 class="featuer-title">
+              <h3 class="featuer-title txt">
                 Feature 2: Game does not contain malware
               </h3>
-              <p class="feature-text">
+              <p class="feature-text txt">
                 SWTOR now has three raids: Eternity Vault, Karagga's Palace, and
                 Explosive Conflict. I first discovered Lordaeron as a fledgling
                 warrior, prone to wearing mail and even leather because I knew
@@ -136,8 +154,8 @@
                 make him so frustrated that our time spent playing slowly
                 becomes more of a burden than pleasure.
               </p>
-              <h3 class="featuer-title">Feature 3: No micro-transactions</h3>
-              <p class="feature-text">
+              <h3 class="featuer-title txt">Feature 3: No micro-transactions</h3>
+              <p class="feature-text txt">
                 SWTOR now has three raids: Eternity Vault, Karagga's Palace, and
                 Explosive Conflict. I first discovered Lordaeron as a fledgling
                 warrior, prone to wearing mail and even leather because I knew
@@ -169,36 +187,24 @@ export default {
 
 <style scoped>
 .content {
-  background: #7ebfff;
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(126, 191, 255, 1) 80%
-  );
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 .sub-title {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: var(--cur-text);
+  text-align: center;
 }
-
-.left-column,
-.center-column,
-.right-column {
-  margin-top: 3rem;
-}
-.left-column,
-.right-column {
-  width: 20%;
+.txt {
+  color: var(--cur-text);
 }
 .center-column {
-  width: 60%;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: auto;
 }
-
 .secondary-section-container {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -207,8 +213,8 @@ export default {
   flex-direction: row;
   justify-content: space-between;
 }
-.left-column-container {
-  background-color: white;
+.left-column-card {
+  background-color: var(--dark-card);
   width: 37%;
   border-radius: 10px;
   display: flex;
@@ -216,22 +222,29 @@ export default {
   align-items: center;
   height: 500px;
 }
+.card-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
 .vote-button {
   background-color: #700000;
   font-size: 80%;
-  color: white;
+  color: var(--cur-text);
   padding: 5px 10px;
   margin: 15px;
 }
 .volt-result-divider {
   width: 80%;
-  border-top: 2px solid #1f1f1f;
+  border-top: 2px solid var(--cur-text);
 }
 .vote-result-graph {
   width: 90%;
 }
 .right-column-container {
-  background-color: white;
+  background-color: var(--cur-card);
   width: 60%;
   border-radius: 10px;
   height: 500px;
@@ -247,7 +260,7 @@ export default {
 
 .update-contaniner {
   width: 90%;
-  background-color: #1f1f1f;
+  background-color: var(--cur-card);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -264,11 +277,11 @@ export default {
 }
 .change-log-divider {
   width: 90%;
-  border: 3px solid white;
+  border: 3px solid var(--cur-text);
   border-radius: 3px;
   margin-top: 10px;
 }
 .change-log-message {
-  color: white;
+  color: var(--cur-text);
 }
 </style>

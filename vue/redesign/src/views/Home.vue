@@ -2,12 +2,12 @@
   <main class="page">
     <section class="content">
       <div class="center-column">
-        <div class="developer-message-container">
-          <h2 class="message-title sub-title">
+        <div class="card-container">
+          <h2 class="sub-title txt">
             Message From The Developers
           </h2>
-          <p class="message">Were slowly getting there! 🏁</p>
-          <p class="message">
+          <p class="message txt">Were slowly getting there! 🏁</p>
+          <p class="message txt">
             Thanks to your support, our team has been busy gathering and
             analyzing test data from the current open beta. If there are no new
             serious bugs, we expect to release this sometime in the second
@@ -17,12 +17,12 @@
             midnight and we expect them to last for 5 hours until <b>5AM</b> the
             following day.
           </p>
-          <p class="message">
+          <p class="message txt">
             We've also just released three new raids: Eternity Vault, Karagga's
             Palace, and Explosive Conflict. Please let us know how you feel
             about them in the forms.
           </p>
-          <p class="message">
+          <p class="message txt">
             We will keep you updated on any issues that may comeup after the
             stress tests.
           </p>
@@ -30,10 +30,8 @@
         </div>
 
         <div class="content-spacer"></div>
-        <div class="video-container">
-          <br />
-          <h2 class="video-title sub-title">Game Play (Beta Release)</h2>
-          <br />
+        <div class="card-container">
+          <h2 class="sub-title txt">Game Play (Beta Release)</h2>
           <iframe
             class="video"
             src="https://www.youtube.com/embed/videoseries?list=PLVKduOhPTRsL0VSSYBb2f8dq44FICzBYS"
@@ -45,15 +43,13 @@
         </div>
 
         <div class="content-spacer"></div>
-        <div class="sign-up-container">
-          <br />
-          <h2 class="sign-up-title sub-title">Sign-up for our beta test</h2>
-          <br />
+        <div class="card-container">
+          <h2 class="sub-title txt">Sign-up for our beta test</h2>
 
           <div class="sign-up-lower-container">
             <div class="sign-up-left-column">
               <img
-                class="sign-up-game-art-left"
+                class="game-art-left game-art"
                 src="../assets/images/signup-left.jpg"
                 alt="game art"
               />
@@ -89,7 +85,7 @@
                   <div class="create-account-check-box-container">
                     <input class="create-account-check-box" type="checkbox" />
                     <label
-                      class="create-account-check-box-label"
+                      class="label txt"
                       for="checkbox"
                     >
                       Subscribe to our news-letter</label
@@ -100,11 +96,11 @@
                       required
                     />
                     <label
-                      class="create-account-check-box-label"
+                      class="create-account-check-box-label txt"
                       for="checkbox"
                     >
                       Agree to our
-                      <span class="terms-and-conditions"
+                      <span class="terms-and-conditions txt"
                         >terms and conditions</span
                       ></label
                     >
@@ -120,7 +116,7 @@
 
             <div class="sign-up-right-column">
               <img
-                class="sign-up-game-art-right"
+                class="game-art-right game-art"
                 src="../assets/images/signup-right.jpg"
                 alt="game art"
               />
@@ -144,53 +140,27 @@ export default {
 </script>
 
 <style scoped>
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .content {
-  background: #7ebfff;
-  background: linear-gradient(
-    0deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(126, 191, 255, 1) 80%
-  );
   display: flex;
   flex-direction: row;
-  height: auto;
   justify-content: center;
-}
-.left-column,
-.center-column,
-.right-column {
-  margin-top: 3rem;
-}
-.left-column,
-.right-column {
-  width: 20%;
 }
 .center-column {
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 60%;
+  align-items: center;
   height: auto;
 }
-
+.txt {
+  color: var(--cur-text);
+}
 .sub-title {
-  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
 }
-.message-title {
-  color: white;
-}
-.video-container,
-.sign-up-container,
-.developer-message-container {
-  background-color: #1f1f1f;
+.card-container {
+  background-color: var(--cur-card);
   width: 90%;
-  margin: auto;
-  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -200,17 +170,10 @@ body {
 
 .message {
   width: 90%;
-  color: white;
   margin-block-start: 0rem;
-  margin-block-end: 1rem;
 }
 .content-spacer {
-  width: 100%;
   height: 2rem;
-}
-.video-title {
-  margin: auto;
-  color: white;
 }
 .video {
   margin: auto;
@@ -222,10 +185,6 @@ body {
   height: auto;
   margin: 5px;
 }
-.sign-up-title {
-  margin: auto;
-  color: white;
-}
 .sign-up-lower-container {
   display: flex;
   flex-direction: row;
@@ -233,7 +192,6 @@ body {
   align-items: center;
 }
 .create-account-form {
-  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,28 +207,24 @@ body {
 .create-account-check-box-container {
   display: block;
 }
-.create-account-check-box-label {
-  color: white;
-}
 .terms-and-conditions {
   text-decoration: underline;
 }
 .terms-and-conditions:hover {
-  color: #700000;
+  color: var(--cur-link);
 }
 .create-account-button {
   margin-top: 2rem;
-  color: white;
+  color: var(--cur-text);
   font-size: 0.8rem;
   padding: 5px;
   width: 50%;
-  background-color: #700000;
+  background-color: var(--cur-btn);
 }
 .create-account-button:hover {
-  background-color: #5c0000;
+  background-color: var(--cur-link);
 }
-.sign-up-game-art-left,
-.sign-up-game-art-right {
+.game-art {
   width: 18vw;
 }
 </style>

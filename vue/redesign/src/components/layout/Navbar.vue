@@ -1,73 +1,108 @@
 <template>
-  <header class="header-container">
-    <div class="header-nav-container">
-      <button class="nav-button" id="/" v-on:click="redirect">Home</button>
-      <button class="nav-button" id="news" v-on:click="redirect">News</button>
-      <button class="nav-button" id="game" v-on:click="redirect">Game</button>
-      <button class="nav-button" id="forum" v-on:click="redirect">Forum</button>
-      <button class="nav-button" id="about" v-on:click="redirect">
-        About Us
-      </button>
-    </div>
-    <div class="header-logo-container">
-      <img
-        class="header-logo"
-        src="../../assets/logos/black-emblem.png"
-        alt="Logo"
-      />
-    </div>
-    <div class="header-icon-container">
-      <div class="facebook-icon-container icon-container">
+  <div>
+    <header class="header-container">
+      <div class="header-nav-container">
+        <router-link class="link" to="/"> Home </router-link>
+        <router-link class="link" to="/news"> News </router-link>
+        <router-link class="link" to="/game"> Game </router-link>
+        <router-link class="link" to="/forum"> Forum </router-link>
+        <router-link class="link" to="/about"> About Us </router-link>
+      </div>
+      <div class="header-logo-container">
         <img
-          class="facebook-icon icon"
-          src="../../assets/icons/facebook-color.png"
-          alt="Facebook Icon"
+          class="header-logo"
+          src="../../assets/logos/black-emblem.png"
+          alt="Logo"
         />
       </div>
-      <div class="twitter-icon-container icon-container">
-        <img
-          class="twitter-icon icon"
-          src="../../assets/icons/twitter-color.png"
-          alt="Twitter Icon"
-        />
+      <div class="header-icon-container">
+        <div class="twitter-icon-container icon-container">
+          <img
+            class="twitter-icon icon"
+            src="../../assets/icons/twitter-color.png"
+            alt="Twitter Icon"
+            @click="openInNewTab('https://twitter.com/CrowfallGame')"
+          />
+        </div>
+        <div class="reddit-icon-container icon-container">
+          <img
+            class="reddit-icon icon"
+            src="../../assets/icons/reddit-color.png"
+            alt="Reddit Icon"
+            @click="openInNewTab('https://www.reddit.com/r/crowfall')"
+          />
+        </div>
+        <div class="dark-light-container icon-container">
+          <img
+            class="dark-light-icon icon"
+            src="../../assets/icons/dark-light-icon.png"
+            @click="toggleDarkMode()"
+          />
+        </div>
+        <button class="logout" v-if="showNav" @click="logout()">Logout</button>
       </div>
-      <div class="reddit-icon-container icon-container">
-        <img
-          class="reddit-icon icon"
-          src="../../assets/icons/reddit-color.png"
-          alt="Reddit Icon"
-        />
-      </div>
-      <div class="twitch-icon-container icon-container">
-        <img
-          class="twitch-icon icon"
-          src="../../assets/icons/twitch-color.png"
-          alt="Twitch Icon"
-        />
-      </div>
-    </div>
-  </header>
+    </header>
+  </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "Navbar",
+  data() {
+    return {
+      darkMode: true,
+    };
+  },
+  computed: {
+    ...mapState(["userProfile"]),
+    showNav() {
+      return Object.keys(this.userProfile).length > 0;
+    },
+  },
   methods: {
-    redirect(event) {
-      window.location.href = event.target.id;
+    logout() {
+      this.$store.dispatch("logout");
+    },
+    openInNewTab(url) {
+      window.open(url, "_blank");
+    },
+    toggleDarkMode() {
+      this.darkMode = !this.darkMode
+    }
+  },
+  mounted() {
+    const htmlElement = document.documentElement;
+    const theme = localStorage.getItem("theme");
+
+    if (theme === "dark") {
+      htmlElement.setAttribute("theme", "dark");
+      this.darkMode = true;
+    } else {
+      htmlElement.setAttribute("theme", "light");
+      this.darkMode = false;
+    }
+  },
+  watch: {
+    darkMode: function () {
+      const htmlElement = document.documentElement;
+
+      if (this.darkMode) {
+        localStorage.setItem("theme", "dark");
+        htmlElement.setAttribute("theme", "dark");
+      } else {
+        localStorage.setItem("theme", "light");
+        htmlElement.setAttribute("theme", "light");
+      }
     },
   },
 };
 </script>
 
 <style scoped>
-.nav-button {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.nav-button,
 .header-container {
-  background-color: white;
+  background-color: var(--cur-nav-bg);
 }
 .header-container,
 .header-icon-container {
@@ -85,17 +120,17 @@ export default {
 .header-nav-container:hover {
   cursor: default;
 }
-.nav-button {
-  border: none;
+.link {
+  padding: 1px 3px;
+  margin: 3px 5px;
+  cursor: default;
+  text-decoration: none;
   font-size: 80%;
-  color: black;
-  margin: 0 3px;
-  outline: none;
+  color: var(--cur-nav-text);
 }
-.nav-button:hover {
-  background-color: #700000;
-  color: white;
-  border-radius: 25px;
+.link:hover {
+  background: var(--cur-nav-hover);
+  border-radius: 5px;
 }
 .header-container {
   width: 100%;
@@ -103,13 +138,15 @@ export default {
 }
 .header-logo-container {
   height: 70px;
+  background-color: var(--cur-nav-icon-bg);
+  border-radius: 50px;
 }
 .header-logo {
   height: 70px;
   width: auto;
 }
 .header-logo:hover {
-  background-color: #e5e5e5;
+  background-color: var(--cur-nav-hover);
   border-radius: 50px;
 }
 .header-icon-container {
@@ -124,12 +161,23 @@ export default {
   padding: 3px;
   height: 20px;
   border-radius: 5px;
+  background-color: var(--cur-nav-icon-bg);
 }
 .icon {
   height: 20px;
   width: auto;
 }
 .icon-container:hover {
-  background-color: #e5e5e5;
+  background-color: var(--cur-nav-hover);
+}
+.logout {
+  border: none;
+  background-color: orange;
+  color: var(--cur-text);
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+.logout:hover {
+  background-color: var(--cur-link);
 }
 </style>

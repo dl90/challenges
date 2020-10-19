@@ -1,25 +1,27 @@
 <template>
-  <section class="content">
-    <div class="image-container">
-      <img class="crowfall-team" src="../assets/images/crowfall-team.jpg" />
-      <div class="crowfall-team-overlay">
-        <a
-          class="crowfall-team-overlay-link"
-          href="https://crowfall.com/en-US/team"
-          >Check us out 👍</a
-        >
+  <main class="page">
+    <section class="content">
+      <div class="image-container">
+        <img class="crowfall-team" src="../assets/images/crowfall-team.jpg" />
+        <div class="crowfall-team-overlay">
+          <a
+            class="link txt"
+            href="https://crowfall.com/en-US/team"
+            >Check us out 👍</a
+          >
+        </div>
+        <img class="fswd-team" src="../assets/images/fswd.jpg" />
+        <div class="fswd-team-overlay">
+          <a
+            class="link txt"
+            href="https://www.bcit.ca/study/programs/7540dipma"
+            >Check us out 👍</a
+          >
+          <p class="fswd-description txt">BCIT Full Stack intake number 1.</p>
+        </div>
       </div>
-      <img class="fswd-team" src="../assets/images/fswd.jpg" />
-      <div class="fswd-team-overlay">
-        <a
-          class="fswd-team-overlay-link"
-          href="https://www.bcit.ca/study/programs/7540dipma"
-          >Check us out 👍</a
-        >
-        <p class="fswd-description">BCIT Full Stack intake number 1.</p>
-      </div>
-    </div>
-  </section>
+    </section>
+  </main>
 </template>
 
 <script>
@@ -33,21 +35,15 @@ export default {
 </script>
 
 <style scoped>
-.content {
-  background: rgb(92, 0, 0);
-  background: linear-gradient(
-    0deg,
-    rgba(92, 0, 0, 1) 0%,
-    rgba(31, 31, 31, 1) 25%,
-    rgba(0, 0, 0, 1) 100%
-  );
-}
 .image-container {
   padding-top: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.txt {
+  color: var(--cur-text)
 }
 .crowfall-team,
 .fswd-team {
@@ -70,14 +66,14 @@ export default {
   width: 100%;
   opacity: 1;
 }
-.crowfall-team-overlay-link {
-  color: white;
+.link {
   font-size: 30px;
   margin-top: auto;
   margin-bottom: auto;
 }
-.crowfall-team-overlay-link:hover {
-  color: #5c0000;
+.link:hover,
+.link:hover {
+  color: var(--cur-link);
 }
 
 .fswd-team-overlay {
@@ -92,15 +88,7 @@ export default {
   width: 100%;
   opacity: 1;
 }
-.fswd-team-overlay-link:hover {
-  color: #5c0000;
-}
 .fswd-description {
-  color: white;
   font-size: 20px;
-}
-.fswd-team-overlay-link {
-  color: white;
-  font-size: 30px;
 }
 </style>
