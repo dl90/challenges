@@ -177,7 +177,15 @@ export default {
 </script>
 
 <style scoped>
+* {
+  transition: var(--transition-time);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+}
 #background-video {
+  margin-top: var(--navbar-margin);
   right: 0;
   top: 100px;
   max-width: 100%;
@@ -186,18 +194,13 @@ export default {
 .txt {
   color: var(--cur-text);
 }
-
-.content {
-  display: flex;
-  flex-direction: column;
-}
 .game-discription {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .center-column {
-    margin-top: 3rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;

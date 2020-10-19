@@ -22,15 +22,17 @@ export default {
 <style>
 body {
   margin: 0px;
+  transition: 0.4s;
 }
 
 :root {
-  --light-bg: white;
+  --light-bg: #7ebfff;
   --light-text: black;
-  --light-hover: #aaaaaa;
-  --light-card: #dbdbdb;
+  --light-hover: #bebebe;
+  --light-card: #ffffff;
   --light-link: #af0000;
   --light-btn: #ff5959;
+  --light-btn-hover: #ff9f9f;
 
   --dark-bg: black;
   --dark-text: white;
@@ -38,6 +40,10 @@ body {
   --dark-card: #272727;
   --dark-link: #ff6666;
   --dark-btn: #700000;
+  --dark-btn-hover: #440000;
+
+  --navbar-margin: 7rem;
+  --transition-time: 0.4s;
 }
 
 [theme="dark"] {
@@ -47,6 +53,7 @@ body {
   --cur-card: var(--dark-card);
   --cur-link: var(--dark-link);
   --cur-btn: var(--dark-btn);
+  --cur-btn-hover: var(--dark-btn-hover);
 
   --cur-nav-bg: var(--dark-card);
   --cur-nav-hover: var(--dark-hover);
@@ -62,6 +69,7 @@ body {
   --cur-card: var(--light-card);
   --cur-link: var(--light-link);
   --cur-btn: var(--light-btn);
+  --cur-btn-hover: var(--light-btn-hover);
 
   --cur-nav-bg: var(--light-card);
   --cur-nav-hover: var(--light-hover);

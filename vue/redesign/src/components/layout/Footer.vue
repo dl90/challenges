@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+* {
+  transition: var(--transition-time);
+}
 .page-footer-container {
   background-color: var(--cur-nav-bg);
   height: 50px;

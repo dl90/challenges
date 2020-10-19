@@ -66,9 +66,7 @@
         <div class="secondary-section-container">
           <div class="left-column-card">
             <div class="card-content">
-              <h3 class="sub-title txt">
-                Which feature next?
-              </h3>
+              <h3 class="sub-title txt">Which feature next?</h3>
               <form class="vote-selection-container">
                 <div>
                   <input
@@ -154,7 +152,9 @@
                 make him so frustrated that our time spent playing slowly
                 becomes more of a burden than pleasure.
               </p>
-              <h3 class="featuer-title txt">Feature 3: No micro-transactions</h3>
+              <h3 class="featuer-title txt">
+                Feature 3: No micro-transactions
+              </h3>
               <p class="feature-text txt">
                 SWTOR now has three raids: Eternity Vault, Karagga's Palace, and
                 Explosive Conflict. I first discovered Lordaeron as a fledgling
@@ -186,10 +186,20 @@ export default {
 </script>
 
 <style scoped>
+* {
+  transition: var(--transition-time);
+}
 .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.center-column {
+  margin-top: var(--navbar-margin);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
 }
 .sub-title {
   color: var(--cur-text);
@@ -197,13 +207,6 @@ export default {
 }
 .txt {
   color: var(--cur-text);
-}
-.center-column {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: auto;
 }
 .secondary-section-container {
   margin-top: 30px;
@@ -214,7 +217,7 @@ export default {
   justify-content: space-between;
 }
 .left-column-card {
-  background-color: var(--dark-card);
+  background-color: var(--cur-card);
   width: 37%;
   border-radius: 10px;
   display: flex;

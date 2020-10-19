@@ -26,15 +26,10 @@
           </div>
 
           <CreatePost />
-          <!-- end of form-content-header -->
           <div>
             <div v-if="posts.length" class="post-container">
               <div v-for="post in posts" v-bind:key="post.id">
-                <Post
-                  v-bind:post="post"
-                  v-bind:title="post.title | trimLength"
-                  v-bind:createdOn="post.createdOn | formatDate"
-                />
+                <Post v-bind:post="post" />
               </div>
             </div>
             <div v-else class="txt">There are currently no posts</div>
@@ -54,7 +49,6 @@
 
 <script>
 import { mapState } from "vuex";
-import moment from "moment";
 import CreatePost from "../components/CreatePost";
 import Post from "../components/Post";
 
@@ -70,30 +64,20 @@ export default {
   data() {
     return {};
   },
-  filters: {
-    formatDate(val) {
-      if (!val) return "-";
-      const date = val.toDate();
-      return moment(date).fromNow();
-    },
-    trimLength(val) {
-      if (val.length < 200) return val;
-      return `${val.substring(0, 200)}...`;
-    },
-  },
 };
 </script>
 
 <style scoped>
+* {
+  transition: var(--transition-time);
+}
 .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .main-column {
-  margin-top: 3rem;
-}
-.main-column {
+  margin-top: var(--navbar-margin);
   width: 80%;
 }
 .txt {

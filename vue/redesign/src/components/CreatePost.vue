@@ -23,9 +23,9 @@
           <button
             @click="createPost()"
             :disabled="post.content === ''"
-            class="button"
+            class="btn"
           >
-            post
+            New Post
           </button>
         </form>
       </div>
@@ -62,7 +62,7 @@ export default {
 
 <style scoped>
 .container {
-  color: white;
+  color: var(--cur-text);
   width: 90%;
   margin: auto;
 }
@@ -82,5 +82,16 @@ export default {
 .post-content {
   height: 80px;
   resize: none;
+}
+.btn {
+  transition: 0.4s;
+  border: none;
+  color: var(--cur-text);
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: var(--cur-btn);
+}
+.btn:hover {
+  background-color: var(--cur-btn-hover);
 }
 </style>

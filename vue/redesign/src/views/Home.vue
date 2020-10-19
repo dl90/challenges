@@ -3,9 +3,7 @@
     <section class="content">
       <div class="center-column">
         <div class="card-container">
-          <h2 class="sub-title txt">
-            Message From The Developers
-          </h2>
+          <h2 class="sub-title txt">Message From The Developers</h2>
           <p class="message txt">Were slowly getting there! 🏁</p>
           <p class="message txt">
             Thanks to your support, our team has been busy gathering and
@@ -84,10 +82,7 @@
                   /><br />
                   <div class="create-account-check-box-container">
                     <input class="create-account-check-box" type="checkbox" />
-                    <label
-                      class="label txt"
-                      for="checkbox"
-                    >
+                    <label class="label txt" for="checkbox">
                       Subscribe to our news-letter</label
                     ><br />
                     <input
@@ -140,13 +135,16 @@ export default {
 </script>
 
 <style scoped>
+* {
+  transition: var(--transition-time);
+}
 .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .center-column {
-  margin-top: 3rem;
+  margin-top: var(--navbar-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,6 +158,7 @@ export default {
 }
 .card-container {
   background-color: var(--cur-card);
+
   width: 90%;
   display: flex;
   flex-direction: column;

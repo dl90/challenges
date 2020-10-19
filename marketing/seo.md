@@ -49,12 +49,31 @@ non-keyword optimizations include:
 ### On-page
 
 * linkable !(dynamically loaded, accessible only after login, not reproducible)
-* title tags
-* content specificity to the topic
+* page title/title tags
+* content specificity and relevance to the topic/search query
+* navigation linking to page
+* individual page ranking is best
+
+1. title tag: unique title (< 60 chars), most important keyword first + brand name
+1. meta tag: unique meta descriptor (< 160 chars) describes title
+1. header: keyword, break content down (100 words) h1 preferred
+1. content: reduce reading diff (~gr 11), avoid keyword stuffing
+1. image alt text: filenames, alt tags related to keywords
+1. anchor text: avoid 'click here'
+
+### Ranking
+
+* AR: Ahref Rank (backlink)
+* DR: Domain Rating
+* UR: URL Rating
+* traffic
+* keywords
+
+## Offsite
 
 ## Local SEO
 
-local businesses and their website https://www.google.com/business/
+local businesses and their website [google](https://www.google.com/business/)
 
 * geographically based
 * name, address, phone, website, consistency

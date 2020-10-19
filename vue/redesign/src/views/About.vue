@@ -4,9 +4,7 @@
       <div class="image-container">
         <img class="crowfall-team" src="../assets/images/crowfall-team.jpg" />
         <div class="crowfall-team-overlay">
-          <a
-            class="link txt"
-            href="https://crowfall.com/en-US/team"
+          <a class="link txt" href="https://crowfall.com/en-US/team"
             >Check us out 👍</a
           >
         </div>
@@ -35,6 +33,12 @@ export default {
 </script>
 
 <style scoped>
+* {
+  transition: var(--transition-time);
+}
+.content {
+  margin-top: var(--navbar-margin);
+}
 .image-container {
   padding-top: 10px;
   position: relative;
@@ -43,7 +47,7 @@ export default {
   justify-content: center;
 }
 .txt {
-  color: var(--cur-text)
+  color: white;
 }
 .crowfall-team,
 .fswd-team {
