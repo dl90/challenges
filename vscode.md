@@ -16,7 +16,8 @@ $HOME/Library/Application Support/Code/User/settings.json
 ```json
 {
     "window.zoomLevel": 0,
-    "editor.renderWhitespace": "all",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
     "editor.renderControlCharacters": false,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -26,12 +27,13 @@ $HOME/Library/Application Support/Code/User/settings.json
         "**/.settings": true,
         "**/.factorypath": true
     },
-    "editor.tabSize": 2,
     "cSpell.userWords": [
         "Anticybersquatting",
         "Bcrypt",
         "Chebyshev",
+        "Cyberlaw",
         "Datagram",
+        "Downcasting",
         "Extranet",
         "Interruptible",
         "Leetcode",
@@ -39,20 +41,28 @@ $HOME/Library/Application Support/Code/User/settings.json
         "OWASP",
         "Regen",
         "Subnetting",
+        "TIMEDIFF",
         "TINYINT",
         "Tileset",
+        "Unmount",
+        "Upcasting",
+        "VARCHAR",
         "autofit",
+        "backlink",
         "buzzworthy",
         "connectionless",
         "crossorigin",
         "cybersquatting",
+        "datetime",
         "devtool",
         "dotenv",
         "fileprogress",
         "firestore",
+        "freemium",
         "getenv",
         "ifconfig",
         "judicate",
+        "lendr",
         "minmax",
         "monospace",
         "netmask",
@@ -62,26 +72,29 @@ $HOME/Library/Application Support/Code/User/settings.json
         "noreferrer",
         "nosniff",
         "nums",
+        "originalname",
         "pathfinding",
         "performant",
         "prepending",
         "pyfile",
         "resave",
+        "sbyte",
         "spritesheet",
         "sqlite",
         "subarrays",
         "systemctl",
+        "textbox",
         "transformative",
         "tweek",
         "unirest",
+        "unmounting",
+        "upvotes",
+        "ushort",
         "wtforms"
     ],
     "editor.formatOnPaste": false,
     "editor.formatOnSave": false,
     "editor.formatOnType": false,
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
     "workbench.colorCustomizations": {
         "editor.background": "#000000",
         "activityBar.background": "#000000",
@@ -103,18 +116,18 @@ $HOME/Library/Application Support/Code/User/settings.json
     "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": true,
     "trailing-spaces.trimOnSave": true,
     "javascript.format.insertSpaceAfterConstructor": true,
-    "python.languageServer": "Microsoft",
+    "python.languageServer":"Microsoft",
     // "javascript.format.enable": false,
     // "eslint.format.enable": true,
     // "standard.enable": false,
-    "standard.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
-    "[vue]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    // "standard.validate": [
+    //     "javascript",
+    //     "javascriptreact",
+    //     "typescript",
+    //     "typescriptreact"
+    // ],
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
 }
 ```

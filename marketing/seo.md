@@ -10,16 +10,49 @@ organic search delivers high relevant traffic
 
 ## Strategy
 
-what are you optimizing for
+optimizing for search queries & search engine ranking
 
-* search queries
-* search engine ranking
+* apply keyword research to content
+* UX: page load time, responsiveness
+* social: more shares = more relevance
+* crawler/bot accessible: broken links signal abandoned website
+* care and effort with content
+  * unique meta
+  * no duplicate content
+  * new content, updates
+  * conversational language use
+* tools: SEO audit checklist
 
 ## Keywords
 
-* head keywords: broad scope
-* singular keywords are highly competitive and vague in meaning
-* long-tail keywords: combination of several words, more clearly defined
+* head keywords, broad keywords, fathead keywords: broad scope, highly competitive and vague in meaning
+* long-tail keywords: combination of several words, more clearly defined, less competition
+
+long-tail keywords typically leads to sales
+
+considerations:
+
+1. relevance: search intent, what users want
+1. traffic: check key phrase search volume
+1. competition: balance volume with cost
+1. ranking for: current keywords, improve existing ones, new keywords
+
+search funnel:
+
+* informational: what/why
+* research: different types of
+* transactional: places to buy
+* navigational: shop name
+
+strategy:
+
+1. theme: content focus
+1. related keywords
+1. specificity: more = easier
+1. keyword tools
+1. keyword mapping to page
+1. broad: homepage
+1. specific: product page
 
 ### Usage
 
@@ -69,12 +102,21 @@ non-keyword optimizations include:
 * traffic
 * keywords
 
-## Offsite
+### Off-page
+
+* backlink: other pages linking to you
+  * from sites with creditability = better SEO
+
+Link building: process of acquiring links to your site
+
+* natural: based on content worth linking to
+* outreach: ask sites/bloggers to link
+* quantity and quality both important
 
 ## Local SEO
 
 local businesses and their website [google](https://www.google.com/business/)
 
 * geographically based
-* name, address, phone, website, consistency
+* name, address, phone, website, consistency (NAP)
 * reviews

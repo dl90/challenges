@@ -76,4 +76,4 @@ netmask => represented the same as ipv4
 
 [cidr](https://www.ipaddressguide.com/cidr)
 
-![chart](https://raw.githubusercontent.com/dl90/challenges/master/ethical-hacking/images/1_intro.png)
+![chart](https://github.com/dl90/challenges/blob/main/ethical-hacking/images/1_intro.png?raw=true)

@@ -10,6 +10,8 @@
 
 ## CH 2
 
+* business model: plans leading to revenue
+* business plan: looks at competitive market
 * value proposition: why customers come (product/service)
 * revenue model
   * advertisement: need viewership/users
@@ -22,8 +24,7 @@
 * marketing strategy
 * organizational development
 
-one sided market: B2C
-two sided market: working with customers (Amazon supports business and individuals)
+* one sided market: B2C
+* two sided market: working with customers (Amazon supports business and individuals)
 
 ## CH 3
-

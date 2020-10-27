@@ -6,7 +6,7 @@ Law and morality are not synonymous, not all laws reflect the sentiment/moral va
 
 ---
 
-> Substantive Law:
+> **Substantive Law**:
 >
 > 'the rights and rules that govern behavior and set limits on conduct'
 >
@@ -16,17 +16,17 @@ Law and morality are not synonymous, not all laws reflect the sentiment/moral va
 
 ---
 
-> Procedural Law:
+> **Procedural Law**:
 >
 > 'determines how substantive laws will be enforced'
 >
 > related to procedures, tells us how to use these rights
 >
-> process to exempt a course
+> eg: process to exempt a course
 
 ---
 
-> Public Law:
+> **Public Law**:
 >
 > how the government and its citizens interact
 >
@@ -34,7 +34,7 @@ Law and morality are not synonymous, not all laws reflect the sentiment/moral va
 
 ---
 
-> Private law:
+> **Private law**:
 >
 > governs personal, social, business (among people)
 >
@@ -77,7 +77,7 @@ Constitution
 
 Division of legislative powers, s.91 Federal, s.92 Provincial
 
-eg. Criminal law is under Federal jurisdiction, only the Federal government can amend it, but it is enforced by both provincial and federal police (VPD/RCMP)
+eg. Criminal law is under Federal jurisdiction, only the Federal government can amend it, but it is enforced by both local and federal police (VPD/RCMP)
 
 Three branches of government with law making powers:
 

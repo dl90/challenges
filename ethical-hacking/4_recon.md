@@ -1,6 +1,6 @@
 # Reconnaissance
 
-![chart](https://raw.githubusercontent.com/dl90/challenges/master/ethical-hacking/images/4_overview.png)
+![chart](https://github.com/dl90/challenges/blob/main/ethical-hacking/images/4_overview.png?raw=true)
 
 * physical: location [aerial images, building layout]
 * social: profile [job, web presence, pictures]
@@ -33,7 +33,7 @@ searches for sub-domains
 subli3ter -d domain.com
 ```
 
-![img](https://raw.githubusercontent.com/dl90/challenges/master/ethical-hacking/images/4_sublist3r.png)
+![img](https://github.com/dl90/challenges/blob/main/ethical-hacking/images/4_sublist3r.png?raw=true)
 
 ### [crt.sh](https://crt.sh/)
 
@@ -53,13 +53,13 @@ needs api keys (api-keys.yaml) for some searches
 theHarvester -h
 ```
 
-![img](https://raw.githubusercontent.com/dl90/challenges/master/ethical-hacking/images/4_theHarvester.png)
+![img](https://github.com/dl90/challenges/blob/main/ethical-hacking/images/4_theHarvester.png?raw=true)
 
 ### [OWASP Amass](https://github.com/OWASP/Amass/blob/master/doc/user_guide.md)
 
 [tutorial](https://github.com/OWASP/Amass/blob/master/doc/tutorial.md)
 
-![img](https://raw.githubusercontent.com/dl90/challenges/master/ethical-hacking/images/4_amass.png)
+![img](https://github.com/dl90/challenges/blob/main/ethical-hacking/images/4_amass.png?raw=true)
 
 ## Technology profiler
 
