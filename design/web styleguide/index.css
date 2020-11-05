@@ -1,0 +1,50 @@
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto, auto;
+  gap: 4vh;
+  justify-items: center;
+}
+.msg {
+  margin: 1rem 2rem;
+  text-align: center;
+}
+
+@media (max-width: 750px) {
+  .logo-container {
+    max-width: 100vw;
+  }
+  .msg {
+    font-size: var(--font-size-lg);
+  }
+}
+@media (min-width: 751px) {
+  .logo-container {
+    max-width: min(80vw, 900px);
+    border-radius: 10px;
+  }
+  .msg {
+    font-size: var(--font-size-sm);
+  }
+}
+.logo-container {
+  background-color: var(--container);
+  transition: 2s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo {
+  width: 43%;
+  padding: 1rem;
+}
+.logo-sm {
+  width: 15%;
+  padding: 1rem;
+}
+.logo-ico {
+  width: 20%;
+  padding: 1rem;
+  float: left;
+}
