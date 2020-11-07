@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="./logo/favicon.png" />
-  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./root.css">
   <link rel="stylesheet" href="./color-typo.css">
   <title>Portfolio Style Guide</title>
 </head>
@@ -16,11 +16,69 @@
     <nav>
       <a href="./index.html">Logo</a>
       <a href="./color-typo.html">Color/Typography</a>
+      <a href="./imagery-icon.html">Imagery/Icon</a>
     </nav>
   </header>
 
-  <div>
+  <div class="color-container">
+    <img src="./color/1.png">
+    <img src="./color/2.png">
+  </div>
 
+  <div class="msg-container">
+    <div class="msg">
+      <p>I don't have a strong logical argument for picking these colors other than these colors looks nice together and
+        the shades
+        complement each other well.</p>
+      <p>The website I used to pick these is <a href="http://colormind.io/">colormind.io</a>.</p>
+    </div>
+    <div class="msg">
+      <h2>Usage</h2>
+      <p>Darker colors will primarily be used as backdrop.</p>
+      <p>Lighter colors (blue to green) will be used for buttons, text highlighting/hover states.</p>
+      <P>Menu colors will be green/darkgreen depending on theme mode.</P>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="msg-container">
+      <div class="msg">
+        <h1>Typography</h2>
+          <div class="sub-section">
+            <p>For headings: <a href="https://fonts.google.com/specimen/Secular+One">Secular One</a></p>
+            <h2>Motivation</h2>
+            <p>Consistency with logo</p>
+            <h2>Usage</h2>
+            <p>Headings only</p>
+          </div>
+          <h1 style="font-size: 64px">Page Header: 64px</h1>
+          <h1 style="font-size: 48px">Heading 1: 48px</h1>
+          <h2 style="font-size: 42px">Heading 2: 42px</h2>
+          <h3 style="font-size: 36px">Heading 3: 36px</h3>
+          <h4 style="font-size: 30px">Heading 4: 30px</h4>
+          <h5 style="font-size: 28px">Heading 5: 28px</h5>
+          <h6 style="font-size: 26px">Heading 6: 26px</h6>
+
+          <div class="sub-section">
+            <p>For all other text: <a href="https://fonts.google.com/specimen/Fira+Sans">Fira Sans</a>
+            </p>
+            <h2>Motivation</h2>
+            <p>This font designed for Mozilla for use in Firefox OS, which has been discontinued.
+              Nevertheless, the Fira typeface still good to use and deserves to be used more.</p>
+            <h2>Usage</h2>
+            <p>All text including buttons, menus and user input</p>
+          </div>
+          <p style="font-weight: 300">Light: Almost before we knew it, we had left the ground.</p>
+          <p style="font-weight: 300; font-style: italic;">Light italic: Almost before we knew it, we had left the
+            ground.</p>
+          <p style="font-weight: 400">Normal: Almost before we knew it, we had left the ground.</p>
+          <p style="font-weight: 400; font-style: italic;">Normal italic: Almost before we knew it, we had left the
+            ground.</p>
+          <p style="font-weight: 600">Bold: Almost before we knew it, we had left the ground.</p>
+          <p style="font-weight: 600; font-style: italic;">Bold italic: Almost before we knew it, we had left the
+            ground.</p>
+      </div>
+    </div>
   </div>
 
 </body>

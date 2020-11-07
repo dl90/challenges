@@ -1,0 +1,36 @@
+
+.color-container {
+  display: flex;
+  overflow: auto;
+}
+.color-container::-webkit-scrollbar {
+  display: none;
+}
+
+.section {
+  margin: 30vh 0;
+}
+.sub-section {
+  margin: 20vh 0;
+}
+.msg-container {
+  margin: auto;
+}
+.msg {
+  color: #f7f9f7;
+}
+.msg a {
+  color: var(--text);
+}
+
+@media (max-width: 750px) {
+  .msg-container {
+    width: 100%;
+  }
+}
+@media (min-width: 751px) {
+  .msg-container {
+    max-width: 60vw;
+    min-width: 700px;
+  }
+}

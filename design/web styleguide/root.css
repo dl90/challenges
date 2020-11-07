@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root {
+  --background: #191515;
+  --text: #ffffff;
+  --container: #f7f9e7;
+  --hover: #a5a5a5;
+
+  --font-size-title: 64px;
+  --font-size-nav: 20px;
+  --font-size-lg: 32px;
+  --font-size-sm: 24px;
+
+  --headings-font: 'Secular One', sans-serif;
+  --text-font: 'Fira Sans', sans-serif;
+
+  --transition-duration: 2s;
+  cursor: default;
+}
+
+body {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: var(--background);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headings-font);;
+}
+
+header {
+  font-family: var(--headings-font);
+  text-align: center;
+  margin-bottom: 2em;
+  color: var(--text);
+}
+header h1 {
+  font-size: var(--font-size-title);
+}
+header a {
+  margin: 1rem;
+  font-size: var(--font-size-nav);
+  color: var(--text);
+}
+
+.msg {
+  margin: 1rem 2rem;
+  text-align: center;
+  font-family: var(--text-font);
+  transition: font-size var(--transition-duration);
+}
+
+@media (max-width: 750px) {
+  .msg {
+    font-size: var(--font-size-lg);
+  }
+}
+@media (min-width: 751px) {
+  .msg {
+    font-size: var(--font-size-sm);
+  }
+}

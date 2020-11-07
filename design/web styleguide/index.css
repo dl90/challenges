@@ -1,21 +1,17 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto, auto;
-  gap: 4vh;
+  grid-template-columns: auto;
+  gap: 5vh;
   justify-items: center;
 }
 .msg {
-  margin: 1rem 2rem;
-  text-align: center;
+  color: #191515;
 }
 
 @media (max-width: 750px) {
   .logo-container {
     max-width: 100vw;
-  }
-  .msg {
-    font-size: var(--font-size-lg);
   }
 }
 @media (min-width: 751px) {
@@ -23,13 +19,10 @@
     max-width: min(80vw, 900px);
     border-radius: 10px;
   }
-  .msg {
-    font-size: var(--font-size-sm);
-  }
 }
 .logo-container {
   background-color: var(--container);
-  transition: 2s;
+  transition: var(--transition-duration);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
