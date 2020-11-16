@@ -10,11 +10,20 @@
 >
 > **mens rea**: criminal intent (subjective)
 
+* criminal law: prosecution by government, prosecutor initiates suit
+* civil case: individuals resolving legal disputes, victim initiates suit
+* 'beyond a reasonable doubt': burden of proof used by jury to determine if a criminal defendant is guilty (criminal)
+* 'preponderance of evidence': burden of proof where theres greater than 50% chance of the claim to true (civil)
+
 ## counters
 
+* 1st amendment: free speech
 * 4th amendment: prohibits unreasonable searches/seizures, need warrant to search emails (exception: immigration officers)
 * exclusionary rule: evidence from warrantless searches may be excluded
-* fruit of the poisonous tree doctrine: evidence derived form illegal searches/arrests/interrogations is inadmissable
+  * fruit of the poisonous tree doctrine: evidence derived form illegal searches/arrests/interrogations is inadmissable
+    * exception 1: discovered from source independent from illegal activity
+    * exception 2: discovery is inevitable
+    * exception 3: attenuation (weakening of connection) between illegal activity and the discovery of evidence
 
 ## jurisdiction (US)
 
@@ -33,6 +42,12 @@
 * Electronics Communication Privacy Act (ECPA): illegal interception electronic communication/surveillance
 * Identity Theft: 18 U.S.C
 * Federal Wiretap Act: prohibits interception of wire/oral/electronic communication
+* The Stored Communications Act (SCA): permits ‘governmental entities’ to obtain contents of electronic communications from service providers in certain circumstances
+  * electronic communication service: 180 days or less, pursuant to a warrant
+  * remote computing service or electronic communication service greater than 180 days:
+    * warrant
+    * administrative subpoena (_subpoena_ issued by a federal agency without prior judicial oversight)
+    * court order
 
 ## challenges of prosecution
 

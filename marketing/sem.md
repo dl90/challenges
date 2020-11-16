@@ -1,5 +1,7 @@
 # SEM
 
+Improve SEO first, then look at SEM
+
 ## reasons for paid ads on google
 
 * screen real estate
@@ -15,4 +17,7 @@ campaign level: costs, location
 ad group level: keywords
 ad level: individual ads
 
-TODO
+## keywords
+
+* broad, exact, phrase, negative
+* remove poor performing keywords
