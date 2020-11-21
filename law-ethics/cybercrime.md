@@ -49,6 +49,15 @@
     * administrative subpoena (_subpoena_ issued by a federal agency without prior judicial oversight)
     * court order
 
+---
+
+* Canadian anti-spam Legislation (CASL):
+  * prohibits sending commercial emails unless concent was given and must include unsubscribe mechanism
+  * must clearly state purpose and details when seeking consent
+  * must not alter network communication or install any program without concent
+  * court enforced penalities for violators, with maximum fines of up to $1M (per individual) or $10M (per violation)
+  * enabled Canada to actively share information and cooperate in global enforcement actions
+
 ## challenges of prosecution
 
 * identifying criminals, extradition
