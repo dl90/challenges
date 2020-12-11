@@ -3,8 +3,8 @@
 ## source of law
 
 * main source of contract law is **common law**, judicial decisions (case law, precedent)
-* restatement of contract (US):
-  * can be used as a source of if the given situation is suitable (deals with issue) with its principles
+* restatement (second) of contract (US):
+  * can be a source of law if the given situation is suitable (deals with issue) with its principles
   * persuasive in nature, **can't base decisions solely on restatement**, **no legal weight**
 * Uniform Commercial Code (UCC): code that governs commercial transactions (transactions based on contracts)
 * United Nations Convention on Contracts for the International Sale of Goods (CISG):
@@ -25,11 +25,12 @@
 
 ---
 
-* damages:
+* damages: you have an obligation to mitigate your damages (reasonable efforts to reduce the amount of claim)
   * general damages: estimated, non-quantifiable
   * special damages: calculated, quantifiable
   * punitive damages: windfall for punishment of extreme behavior
-  * liquidated damages: reasonable estimate of potential losses if contract ends
+  * liquidated damages: reasonable estimate of potential losses if contract ends (deposit)
+    * down payment is not liquidated damages
 
 ### alternate dispute resolution (ADR)
 
@@ -70,7 +71,7 @@
 * warranty: disclaimers
 * limitation of liability: limited remedies for all types of damages (fixed amount regardless of loss)
 * arbitration: alternative dispute resolution
-* indemnity: purchaser can sue seller if seller sold copyrighted material and has indemnity clause in EULA
+* indemnity: party who has duty is liable for potential damages (purchaser can sue seller if seller sold copyrighted material and has indemnity clause in EULA)
 * severability: other parts of contract still valid even if a part of it was judicially declared void
 * merger: contract represents the complete and final agreement between the parties and supersedes all informal/oral agreements
 * choice of law/forum selection: jurisdiction of laws applied, venue of court

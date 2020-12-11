@@ -1,13 +1,23 @@
 # Social Media Marketing
 
-* Sarnoff’s Law
-* Metcalfe’s Law
-* Reed’s Law
-* K-factor
-* applause rate
-* amplification rate
+* Sarnoff’s Law: audience of 100 10X more valuable than 10
+* Metcalfe’s Law: network of 100 100X more valuable than 10
+* Reed’s Law: community of 100 is infinitely more valuable than 10
+* K-factor: growth rate (k = invites * conversion)
+* net promoter score: likelihood of recommending the company
 
 ---
+
+* balance promotional content, owned content, curated content (10/30/60)
+* metrics to measure
+  * conversion rate: number of comments/replies per post
+  * amplification rate: number of posts shared by your followers
+  * applause rate: likes per post
+  * economic value: macro (sales) and micro (sign-up) conversions, savings
+
+---
+
+## HubSpot
 
 * vanity metric: statistics with no correlation to business success (eg. follower count)
 * KPI
@@ -32,7 +42,7 @@
 
 ## content strategy
 
-* social medial is for building relationships, not pushing products
+* social media is for building relationships, not pushing products
 * video/visual content preference
 * realtime marketing (news jacking): content relating to current events
 * user generated content: 80% impact on purchasing decisions, 10x more impactful

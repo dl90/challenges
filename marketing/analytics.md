@@ -14,10 +14,10 @@ at least 5 KPI to justify findings
 
 activity != outcome || visits != sales
 
-conversion example:
-
-* macro: sales
-* micro: desired actions taken
+* conversion
+  * macro: sales
+  * micro: desired actions taken
+* attribution: determine how/which marketing channels lead to the conversion
 
 ## Considerations
 

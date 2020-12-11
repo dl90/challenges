@@ -21,7 +21,7 @@ civil wrong: victim sues for compensation
 
 * intentional torts (majority of torts related to internet)
 * negligence torts (careless wrongdoing)
-* strict liability (employee caused injuries, both employer and employee are liable)
+* strict liability: liability without fault (employee caused injuries, both employer and employee are liable)
 
 ## tort actions form online conduct
 
@@ -34,7 +34,7 @@ civil wrong: victim sues for compensation
 ### invasion of privacy
 
 * intrusion upon seclusion (intentional intrusion without consent)
-* misappropriation of likeness and name (emotional interests regardless of fame)
+* misappropriation of likeness and name (emotional interests regardless of fame, but can be used by celebrities)
 * disclosure of private info
 * false light (similar to defamation, false statements leading to embarrassment or other implications)
   * defamation: protecting victims reputation
@@ -75,12 +75,12 @@ civil wrong: victim sues for compensation
   * punitive damages: to punish defendant
 * equitable remedy (injunction)
   * monetary damages are insufficient and irreparable damages will result unless injunction is granted
-  * Quantum Meruit: plaintiff is entitled to payment for services provided to and requested by the defendant (to their benefit) even in the absence of a contract.
+  * **Quantum Meruit**: plaintiff is entitled to payment for services provided to and requested by the defendant (to their benefit) even in the absence of a contract.
 
 ## defense
 
 * lack of jurisdiction
-* concent given
+* consent given
 * good samaritan provision under Communication Decency Act (CDA)
   * platform immunity to third-party content, provided theres moderation with good faith
 * sovereign immunity (government, agents of government)
