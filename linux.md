@@ -1,49 +1,29 @@
 # linux commands
 
-## run task in background
-
 ```bash
+# run task in background
 node server.js &
-```
 
-## switch to task
-
-```bash
+# switch to task
 fg
-```
 
-## pause fg task then run it in bg
-
-```bash
+# pause fg task then run it in bg
 'control z'
 bg
-```
 
-## check running background tasks
-
-```bash
+# check running background tasks
 jobs
-```
 
-## continue running task after exiting terminal
-
-```bash
+# continue running task after exiting terminal
 disown -h %<job number>
-```
 
-## find running process
-
-```bash
+# find running process
 ps aux | grep server.js
-
 pgrep node
-```
+top
 
-## kill running process
-
-```bash
+# kill running process
 kill <processID>
-
 pkill node
 ```
 

@@ -15,13 +15,12 @@ npm ls -g --depth 0
 => override the binaries of modules installed with `nvm`:
 
 /usr/local/lib
-├── apidoc@0.20.0
-├── firebase-tools@8.2.0
-├── http-server@0.12.1
-├── jsdoc@3.6.3
-├── knex@0.20.13
-├── tldr@3.3.2
-└── typescript@3.9.3
+├── @angular/cli@12.0.1
+├── npm@7.13.0
+├── pm2@4.5.6
+├── standard@16.0.3
+└── typescript@4.2.4
+
 => If you wish to uninstall them at a later point (or re-install them under your
 => `nvm` Nodes), you can remove them from the system Node as follows:
 
@@ -32,35 +31,48 @@ npm ls -g --depth 0
 [usage](https://github.com/nvm-sh/nvm#usage)
 
 ```bash
+
 nvm current
 
+# location
+nvm which node
+
 nvm ls
-```
 
-setting a new alias:
-
-```bash
-nvm alias <name> <version>
-```
-
-using an alias/specific version:
-
-```bash
-nvm use <name/version>
-```
-
-```bash
-nvm alias
-
-default -> node (-> v14.5.0)
-node -> stable (-> v14.5.0) (default)
-stable -> 14.5 (-> v14.5.0) (default)
+->      v16.2.0
+default -> node (-> v16.2.0)
 iojs -> N/A (default)
 unstable -> N/A (default)
-lts/* -> lts/erbium (-> N/A)
+node -> stable (-> v16.2.0) (default)
+stable -> 16.2 (-> v16.2.0) (default)
+lts/* -> lts/fermium (-> N/A)
 lts/argon -> v4.9.1 (-> N/A)
 lts/boron -> v6.17.1 (-> N/A)
 lts/carbon -> v8.17.0 (-> N/A)
-lts/dubnium -> v10.21.0 (-> N/A)
-lts/erbium -> v12.18.2 (-> N/A)
+lts/dubnium -> v10.24.1 (-> N/A)
+lts/erbium -> v12.22.1 (-> N/A)
+lts/fermium -> v14.17.0 (-> N/A)
+
+nvm cache clear
+
+# setting a new alias:
+nvm alias <name> <version>
+
+# using an alias/specific version:
+nvm use <name/version>
+
+nvm alias
+
+default -> node (-> v16.1.0)
+iojs -> N/A (default)
+unstable -> N/A (default)
+node -> stable (-> v16.1.0) (default)
+stable -> 16.1 (-> v16.1.0) (default)
+lts/* -> lts/fermium (-> N/A)
+lts/argon -> v4.9.1 (-> N/A)
+lts/boron -> v6.17.1 (-> N/A)
+lts/carbon -> v8.17.0 (-> N/A)
+lts/dubnium -> v10.24.1 (-> N/A)
+lts/erbium -> v12.22.1 (-> N/A)
+lts/fermium -> v14.16.1 (-> N/A)
 ```
