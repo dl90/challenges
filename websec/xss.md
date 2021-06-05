@@ -1,9 +1,10 @@
 # XSS: Cross site scripting
 
 * injection/execution of foreign javascript on to the clients browser
-* browser trusts injected script believing it's part of the hosts response, bypasses same origin
-* gives access to non httpOnly cookies, tokens, session storage, DOM
-* redirect page, clears DOM and inject iframe of similar looking site
+* browser trusts injected script believing it's part of the hosts response, bypasses same-origin policy
+* gives access to non httpOnly cookies, session/local storage, DOM
+* can use httpOnly cookies as part of malicious requests
+* redirect page, manipulate DOM, inject iframe
 
 ## types
 
