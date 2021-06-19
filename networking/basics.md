@@ -25,7 +25,7 @@
 
 ## MAC (Media Access Control)
 
-- 48 bit physical address, octet, 6 pairs of hex (hardware and network adapters)
+- 48 bit physical address, 6 octets/pairs of hex (hardware and network adapters)
 - first 24 bit identifies vendor (Organizationally Unique Identifier)
 - typically do not change (but can be changed depending on device)
 - used to identify, filter/whitelist devices
@@ -48,13 +48,3 @@
 - Multicast: sends frame to a group of local network devices (MAC: .odd:..:..:..)
 - Unicast: sends frame to one local network device (MAC: .even:..:..:..)
 - Cyclical Redundancy Check (CRC): ensures data integrity on layer 2
-
-## DHCP (Dynamic Host Configuration Protocol)
-
-- automates local network IP management
-- dynamically assigns and manages IP address (track of assigned IPs and associated MAC addresses and lease/expiration time)
-- composed of DHCP server(s) (router/dedicated server) and clients (network devices)
-- DHCP Discover: clients IP request is broadcast to the whole network (255.255.255.255), targeting the DHCP servers
-- DHCP Offer: DHCP server responds with available IP addresses
-- DHCP Request: client confirms (typically first offer received) and sends the address to the DHCP server
-- DHCP ACK (acknowledgement): DHCP server sends IP addr, subnet mask, default gateway, DNS server

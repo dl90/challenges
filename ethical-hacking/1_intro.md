@@ -49,7 +49,7 @@ User Datagram Protocol
 
 ## Subnetting
 
-netmask => represented the same as ipv4
+subnet mask => represented the same as ipv4
 
 **128**[10000000] **192**[11000000] **224**[11100000] **240**[11110000] **248**[11111000] **252**[1111100] **254**[11111110] **255**[11111111]
 
