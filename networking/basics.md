@@ -6,21 +6,21 @@
 1. data link: node to node data transfer, identifies access through MAC address (within private network)
 1. network: identifies path for cross network data transfer (routing and traffic control)
 1. transport: chucking and packaging data for transfer, manages transmission speed and handles transport errors
-1. session: setup, exchange, identify, scope and teardown of connections between devices
+1. session: manages setup, exchange, and teardown of application connections between devices
 1. presentation: character encoding, encryption and compression
 1. application: application API requests
 
 ### Device Level Process
 
 - Inbound:
-  - Layer 2: receives frame, filters/verifies MAC and caches return MAC, checks and discards any errors, peels MAC from frame and passes IP packet
-  - Layer 3: receives packet, verifies IP and caches return IP, checks for errors, peels IP from packet and passes segment
+  - Layer 2: receives frame, filters/verifies MAC and caches return MAC, checks and discards any errors, peels MAC from frame and passes IP datagram
+  - Layer 3: receives datagram, verifies IP and caches return IP, checks for errors, peels IP from datagram and passes TCP segment
   - Layer 4: receives segment, assemble and verifies data, addresses any errors/missing data, peels off sequencing info for assembling data and passes data to port
   - Layer 5-7: receives data, caches return port, consumes data
 - Outbound:
   - Layer 5-7: generates and forwards data and destination port
   - Layer 4: chucks data to build segment, attaches source and destination ports
-  - Layer 3: builds packet, attaches source and destination IP
+  - Layer 3: builds datagram, attaches source and destination IP
   - Layer 2: builds frame, attaches source and destination MAC
 
 ## MAC (Media Access Control)
@@ -34,7 +34,7 @@
 
 ```text
 | preamble | Start frame delimiter | dest MAC | source MAC | (VLAN header)/ethertype |   payload  | frame check sequence (CRC) |
-| 7 bytes  |       1 byte          |  6 bytes |  6 bytes   |        6 bytes          | 1500 bytes |         4 bytes            |
+| 7 bytes  |       1 byte          |  6 bytes |  6 bytes   |       6/2 bytes         | 1500 bytes |         4 bytes            |
 ```
 
 ## Terms

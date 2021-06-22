@@ -2,12 +2,12 @@
 
 ## Layer 3 IP Packet (Datagram)
 
-- IP packet is the payload of ethernet frames (Layer 2)
+- Ethernet frames (Layer 2) encapsulates IP packets (Layer 3)
+- IP packet's payload is TCP/UDP segment (Layer 4)
 - min header size: 20 bytes
 - largest packet size including header is 16 bits: 2 octet or 2^16 - 1 bytes
-- IP packet payload is TCP/UDP segment (Layer 4)
 
-### Header fields
+### Datagram Header fields (IPv4)
 
 - identification field used to identify packets belonging to a transmission
 - fragmentation (chunking data) is indicated by the flag field

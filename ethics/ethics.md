@@ -4,10 +4,10 @@
 
 ### Personal
 
-- Honesty/integrity against falsehood
-- Honoring commitments (be accountable)
-- Pursuit positive improvement
+- Honesty/integrity
+- Honoring commitments
 - Intent over outcome
+- Pursuit positive improvement
 
 ### Social
 
