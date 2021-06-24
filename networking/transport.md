@@ -74,24 +74,24 @@ home computer A                                                                 
 1. A wants to connect to 202.93.95.234:443, sees address is not in LAN, hits gateway (10.1.1.1)
   - A resolves gateway MAC addr with its ARP table
   - A designates ephemeral port 49555 for the TCP connection, builds TCP segment with ports and SYN flag to initiate handshake (layer 4)
-  - TCP segment is encapsulated in IP datagram, with destination 202.93.95.234 (layer 3)
-  - IP datagram is encapsulated in ethernet frame, with gateway MAC as destination MAC (layer 2)
+  - TCP segment is encapsulated in IP packet, with destination 202.93.95.234 (layer 3)
+  - IP packet is encapsulated in ethernet frame, with gateway MAC as destination MAC (layer 2)
   - ethernet frame sent to router through cat-6 (layer 1)
 
 2. home router receives ethernet frame
-  - sees the MAC address is for it, verifies CRC, retrieves payload/IP datagram
-  - router inspects datagram checksum and destination IP, look up its routing table, defaults to the ISP gateway (node), resolves the nodes MAC with its ARP table
-  - router updates IP datagram sources IP with its own IP 201:23:45:67, decrements TTL and updates checksum
+  - sees the MAC address is for it, verifies CRC, retrieves payload/IP packet
+  - router inspects packet checksum and destination IP, look up its routing table, defaults to the ISP's gateway (node), resolves the nodes MAC with its ARP table
+  - router updates IP packet sources IP with its own IP 201:23:45:67 (NAT), decrements TTL and updates checksum
   - router builds ethernet frame with ISP node gateway MAC as destination and sends it
 
 3. router hops repeat until frame reaches web sever (or TTL reaches 0)
 
-4. web server receives ethernet frame, destination MAC address matches, verifies CRC, retrieves IP datagram
-  - server verifies IP datagram checksum and destination IP, retrieves TCP segment
+4. web server receives ethernet frame, destination MAC address matches, verifies CRC, retrieves IP packet
+  - server verifies IP packet checksum and destination IP, retrieves TCP segment
   - server verifies TCP segment, destination port status (443), sees SYN flag and notes the acknowledgment number
   - server builds new TCP segment with SYN-ACK flag with destination port 49555 to proceed with handshake
-  - TCP segment is encapsulated in IP datagram, with destination 201:23:45:67 (home router)
-  - IP datagram is encapsulated in ethernet frame with the relaying routers MAC address as destination MAC (203.141.47.242)
+  - TCP segment is encapsulated in IP packet, with destination 201:23:45:67 (home router)
+  - IP packet is encapsulated in ethernet frame with the relaying routers MAC address as destination MAC (203.141.47.242)
   - ethernet frame hops between routers and reaches home router
   - home router uses NAT to forward ethernet frame to A in its private network
   - computer A processes the frame and continues with the handshake

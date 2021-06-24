@@ -1,5 +1,12 @@
 # Network Layer
 
+## Layer 2 Ethernet Frame
+
+```text
+| preamble | Start frame delimiter | dest MAC | source MAC | (VLAN header)/ethertype |   payload  | frame check sequence (CRC) |
+| 7 bytes  |       1 byte          |  6 bytes |  6 bytes   |       6/2 bytes         | 1500 bytes |         4 bytes            |
+```
+
 ## Layer 3 IP Packet (Datagram)
 
 - Ethernet frames (Layer 2) encapsulates IP packets (Layer 3)
@@ -104,17 +111,7 @@ arp -la
 - broadcast ARP messages looks for unknown IPs in LAN (MAC FF:FF:FF:FF:FF:FF)
 - client with matching broadcasted IP sends back an ARP response containing its MAC
 
-## DHCP (Dynamic Host Configuration Protocol)
-
-- automates local network IP management
-- dynamically assigns and manages IP address (track of assigned IPs and associated MAC addresses and lease/expiration time)
-- composed of DHCP server(s) (router/dedicated server) and clients (network devices)
-- DHCP Discover: clients IP request is broadcast to the whole network (255.255.255.255), targeting the DHCP servers
-- DHCP Offer: DHCP server responds with available IP addresses
-- DHCP Request: client confirms (typically first offer received) and sends the address to the DHCP server
-- DHCP ACK (acknowledgement): DHCP server sends IP addr, subnet mask, default gateway, DNS server
-
-## Routing
+## Routing (Layer 3)
 
 - gateway router: primary point of ingress (entry) and egress (exit) to WAN
 - routers have at least 2 network interfaces with different MAC/IP to connect different networks
@@ -130,19 +127,19 @@ arp -la
 netstat -r [-n -R -x]
 ```
 
-varies depending on manufacturer, typically contains
+varies depending on manufacturer, typically contains:
 
 - destination networks (network identifiers): IP range for remote networks
 - next hop (gateway): IP of network router for destination network
 - total hops (metric): cost used to decide efficiency
 - interface: name or address of the network interface (hardware) to reach the gateway
 
-routing tables are constantly updated as routers communicate to other routers using routing protocols
+routing tables are dynamically updated as routers communicate to other routers using routing protocols
 
 ### Interior Gateway Protocol
 
 Used by routers to exchange info within a single autonomous system (AS),
-which is collection of networks under the control of a single network operator (eg: large organizations, ISP)
+a collection of networks under the control of a single network operator (eg: large organizations, ISP)
 
 each AS has their own IP address space (block of IPs) and a ASN assigned by IANA <https://www.whatismyip.com/asn/US/>
 
@@ -158,6 +155,7 @@ each AS has their own IP address space (block of IPs) and a ASN assigned by IANA
 Used by routers to exchange info between independent autonomous systems
 
 - the basis of internet (network of networks)
+- initially lacks the mechanism to directly optimize for latency, leading to selfish routing policies (hot-potato routing)
 - edge router: in charge of routing traffic outside of AS
 
 ## Non-routable Address Space (private network)
@@ -171,5 +169,5 @@ addresses set aside, not assigned to any AS
 ```
 
 - can be routed within an AS (interior gateway protocol) but not outside
-- ideal for client IPs within LAN, using NAT
-- provides some protection for clients, external requests limited to responses (client obfuscation by router)
+- ideal for client IPs within LAN with gateways using NAT
+- provides some protection for clients, external requests limited to responses (client IP obfuscation by router)
